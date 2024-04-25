@@ -6,8 +6,26 @@ html {
 body{
   /* background: #ffffff url(background.jpeg) center center/contain repeat; */
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  
+}
+
+.frame {
+  background: rgb(255, 255, 255, .8);    /*  70% opaque white */ 
+  padding: 5%;
+  background-clip: border-box;
+  background-size: cover;
+  margin:2%;
+  /* height: 85vh; */
+   height: 85vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  flex: 1;
 }
 
 hr {
@@ -21,7 +39,10 @@ h1{
   width: 200px;
   opacity: 0.7;  */
   color: black;
-  font-family: "Merienda", cursive;
+  /* font-family: "Merienda", cursive; */
+  font-family: "Enriqueta", serif;
+  font-weight: 600;
+  font-style: normal;
   font-size: 50px;
   text-align: center;
   margin-top: 0px;
@@ -30,23 +51,35 @@ h1{
 
 
 p{
-  font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
+  /* font-family: "Rajdhani", sans-serif; */
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
 }
 
 /* Navigation Bar CSS */
 #menu {
-  background: #E4FBFF;
+  /* background: #ffffff; */
   height: 45px;
-  border-radius: 12px;
-   font-family: "Rajdhani", sans-serif;
+
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  border-radius: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-width: 1px;
+  /* font-family: "Rajdhani", sans-serif; */
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 16px;
   margin-top: 0px;
-  font-weight: bold;
+ 
 }
 #menu ul, #menu li {
   margin: 0 auto;
   padding: 0;
-  list-style: none
+  list-style: none;
 }
 #menu ul {
   width: 100%;
@@ -68,10 +101,13 @@ p{
 #menu a.dropdown-arrow:after {
   content: "\25BE";
   margin-left: 5px;
+  /* pointer-events: none; */
+  display: none;
+  z-index: -1;
 }
 #menu li a:hover {
   color: #000000;
-  background: #A3C1D6;
+  border-bottom: 3px solid red;
 }
 #menu input {
   display: none;
@@ -98,8 +134,8 @@ p{
 #menu ul.sub-menus{
   height: auto;
   overflow: hidden;
-  width: 170px;
-  background: #E4FBFF;
+  width: 220px;
+  background: #ffffff;
   position: absolute;
   z-index: 99;
   display: none;
@@ -117,12 +153,12 @@ p{
   display: block
 }
 #menu ul.sub-menus a:hover{
-  background: #A3C1D6;
+  background: #ffffff;
   color: #000000;
 }
-@media screen and (max-width: 800px){
-  #menu {position:relative}
-  #menu ul {background:#E4FBFF;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+@media screen and (max-width: 828px){
+  #menu {position:relative; font-size:30px;padding-top:0px;padding-bottom: 5px;}
+  #menu ul {background:#ffffff;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
   #menu ul.sub-menus {width:100%;position:static;}
   #menu ul.sub-menus a {padding-left:30px;}
   #menu li {display:block;float:none;width:auto;}
@@ -135,5 +171,9 @@ p{
 
 
 
-
-
+footer {
+  height: 20px;
+  padding: 15px;
+  text-align: center;
+  /* background: PapayaWhip; */
+}
