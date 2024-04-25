@@ -4,28 +4,40 @@ html {
 }
 
 body{
-  /* background: #ffffff url(background.jpeg) center center/contain repeat; */
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+ 
+
+  background-image:
+  linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
+  url('background2.jpeg');
+
+
+
+  
+  /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
   margin-left: 10%;
   margin-right: 10%;
 
-  
+
 }
 
 .frame {
   background: rgb(255, 255, 255, .8);    /*  70% opaque white */ 
-  padding: 5%;
+  padding: 5%; 
   background-clip: border-box;
   background-size: cover;
   margin:2%;
   /* height: 85vh; */
-   height: 85vh;
+   min-height: 100vh;
+  min-width: 500px;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* grid-template-rows: auto 1fr auto; */
+ 
+  align-content: space-between; 
+
 }
 
 main {
-  flex: 1;
+  /* flex: 1; */
 }
 
 hr {
@@ -52,13 +64,29 @@ h1{
 
 p{
   /* font-family: "Rajdhani", sans-serif; */
-  font-family: "Josefin Slab", serif;
+  /* font-family: "Josefin Slab", serif; */
+  /* font-family: "Poiret One", sans-serif; */
+  font-family: "News Cycle", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 20px;
+  text-indent: 2em;
 }
 
+h2{
+  font-family: "Rajdhani", sans-serif;
+  /* font-family: "Josefin Slab", serif; */
+  /* font-family: "Poiret One", sans-serif; */
+  /* font-family: "News Cycle", sans-serif; */
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 35px;
+  text-align:center;
+  color: #0c7367;
+  
+}
 /* Navigation Bar CSS */
 #menu {
   /* background: #ffffff; */
@@ -173,7 +201,26 @@ p{
 
 footer {
   height: 20px;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
-  /* background: PapayaWhip; */
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size:12px;
+  color: #6E6E6E;
+
+}
+
+
+iframe{
+  width:100%;
+  min-height: 800px;
+}
+.styleh2{
+  color: #966e87;
+  font-size:40px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
