@@ -199,12 +199,12 @@ h2{
 
 
 
-footer {
+.footer {
   height: 20px;
   padding: 20px;
   text-align: center;
   font-family: "Saira Extra Condensed", sans-serif;
-  font-size:12px;
+  font-size:16px;
   color: #6E6E6E;
 
 }
