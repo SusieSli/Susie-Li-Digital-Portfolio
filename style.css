@@ -31,6 +31,7 @@ body{
 
 main {
   /* flex: 1; */
+  min-width: 500px;
 }
 
 hr {
@@ -95,6 +96,8 @@ h2{
   font-family: "Saira Extra Condensed", sans-serif;
   font-size: 16px;
   margin-top: 0px;
+
+
  
 }
 #menu ul, #menu li {
@@ -181,6 +184,7 @@ h2{
   color: #000000;
 }
 @media screen and (max-width: 828px){
+
   #menu {position:relative; font-size:30px;padding-top:0px;padding-bottom: 5px;}
   #menu ul {background:#ffffff;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
   #menu ul.sub-menus {width:100%;position:static;}
@@ -193,7 +197,30 @@ h2{
   #menu input:checked ~ ul {display:block}
 }
 
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .frame {
+     margin:1%;
+     padding: 4%; 
+     min-width: 300px;
+  }
+  
+  body{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+  }
 
+  main {
+
+    min-width: 300px;
+  }
+}
 
 .footer {
   height: 20px;
