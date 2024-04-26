@@ -6,7 +6,6 @@ html {
 body{
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('background2.jpeg');
   /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
-  
   margin-left: 10%;
   margin-right: 10%;
 
@@ -24,7 +23,6 @@ body{
   min-width: 500px;
   display: grid;
   /* grid-template-rows: auto 1fr auto; */
- 
   align-content: space-between; 
 
 }
@@ -81,6 +79,22 @@ h2{
   color: #0c7367;
   
 }
+
+h3{
+  /* font-family: "Rajdhani", sans-serif; */
+  /* font-family: "Josefin Slab", serif; */
+  /* font-family: "Poiret One", sans-serif; */
+  font-family: "News Cycle", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 25px;
+  text-align:center;
+  color: #000000;
+}
+
+
+
 /* Navigation Bar CSS */
 #menu {
   /* background: #ffffff; */
@@ -224,7 +238,8 @@ h2{
 
 .footer {
   height: 20px;
-  padding: 20px;
+  padding: 0px;
+  margin:0px;
   text-align: center;
   font-family: "Saira Extra Condensed", sans-serif;
   font-size:16px;
@@ -246,9 +261,23 @@ iframe{
   color: #648096;
   font-size:40px;
 }
+
+.styleh2-3{
+  color: #9cb078;
+  font-size:40px;
+}
+
 img{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.endspace{
+height:2%;
+}
+
+.caption{
+  text-align: center;
+  padding-top:0px;
+}
