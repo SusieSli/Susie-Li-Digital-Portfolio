@@ -6,3 +6,5 @@ function updatemenu() {
     document.getElementById('menu').style.borderRadius = '0px';
   }
 }
+
+
