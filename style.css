@@ -4,16 +4,9 @@ html {
 }
 
 body{
- 
-
-  background-image:
-  linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
-  url('background2.jpeg');
-
-
-
-  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('background2.jpeg');
   /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
+  
   margin-left: 10%;
   margin-right: 10%;
 
@@ -127,11 +120,14 @@ h2{
   text-transform: capitalize;
 }
 #menu a.dropdown-arrow:after {
-  content: "\25BE";
+  /* content: "\27F1"; */
+  content: "\23F7";
+  /* color: red; */
+  /* content: "\26DB"; */
   margin-left: 5px;
-  /* pointer-events: none; */
-  display: none;
-  z-index: -1;
+  pointer-events: none;
+  /* display: none;
+  z-index: -1; */
 }
 #menu li a:hover {
   color: #000000;
@@ -219,6 +215,10 @@ iframe{
   font-size:40px;
 }
 
+.styleh2-2{
+  color: #648096;
+  font-size:40px;
+}
 img{
   display: block;
   margin-left: auto;
