@@ -229,6 +229,12 @@ h3{
   main {
     min-width: 300px;
   }
+
+  .ulstyle{
+    /* padding-left: 0px; */
+    margin-left:-20px;
+  }
+  
 }
 
 .footer {
@@ -279,7 +285,7 @@ height:2%;
   text-indent: 0em;
 }
 
-ul{
+.ulstyle{
   /* font-family: "Rajdhani", sans-serif; */
   /* font-family: "Josefin Slab", serif; */
   /* font-family: "Poiret One", sans-serif; */
