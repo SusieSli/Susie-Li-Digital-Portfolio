@@ -134,7 +134,8 @@ h3{
 }
 #menu a.dropdown-arrow:after {
   /* content: "\27F1"; */
-  content: "\23F7";
+  content: "\25BE";
+  /* content: "\02C5"; */
   /* color: red; */
   /* content: "\26DB"; */
   margin-left: 5px;
